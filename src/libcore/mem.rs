@@ -477,7 +477,7 @@ pub fn replace_with<T, F>(val: &mut T, closure: F)
     }
 
     // Forget the guard, to avoid panicking.
-    mem::forget(guard);
+    forget(guard);
 }
 
 /// Disposes of a value.
